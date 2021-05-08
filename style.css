@@ -1,0 +1,84 @@
+
+#root{
+    /*background-image: linear-gradient(to bottom right, rgb(197, 120, 32), rgb(1, 1, 46));
+    */
+    background-size: 100% 100%;
+    background-image: url(./img/background.jpeg);
+    background-image: no;
+    }
+.window{
+    width: 33%;
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow-y: visible;
+    display: inline-block;
+    height: 100%;
+    flex-direction: column;
+vertical-align: top;
+justify-items: stretch;}
+.header{
+    text-align: center;
+    font-family: cursive;
+    font-size: x-large;
+    margin: 10px;
+    font-weight: bolder;
+    color: goldenrod;
+
+}
+
+
+.post{
+    overflow-wrap: break-word;
+    text-overflow: ellipsis;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    height: max-content;
+    border-image-slice: 43 43 43 43;
+    border-image-width: 10px 10px 10px 10px;
+    border-image-outset: 0px 0px 0px 0px;
+    border-image-repeat: repeat repeat; 
+    border-image-source: url(./img/post_border.png);
+    margin: 20px 20px 20px 20px;
+    background-image: linear-gradient(to bottom, rgb(80, 53, 14), rgb(109, 78, 48));
+
+}
+
+.comic{
+    max-height: 70%;
+    text-align: center;
+    overflow-y: scroll;
+}
+img{
+    object-fit: contain;
+    max-width: 100%;
+}
+.sanad{
+    margin: inherit;
+}
+.saying{
+    margin: inherit;
+}
+
+button{
+    width: 33%;
+    height: 10%;
+    margin: inherit;
+}
+textarea{
+    width: 85%;
+    margin: inherit;
+    height: fit-content;
+    overflow-y: visible;
+}
+label{
+    margin: inherit;
+    box-sizing: border-box;
+}
+.login{
+    float: left;
+    height: 100%;
+    
+}
+p{
+    margin: inherit;
+}
