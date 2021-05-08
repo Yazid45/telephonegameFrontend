@@ -1,5 +1,4 @@
 
-import {port} from './index'
 
 export class Post{
     constructor(message, sanad){
@@ -85,13 +84,13 @@ export class Post{
 Post.getBig = async ()=>{
     let post = await axios({
         method: 'get',
-        url: 'http://localhost:'+port+'/posts/big'
+        url: 'http://localhost:3001/posts/big'
     })
     
     return new Post(post.data.message, post.data.sanad)
 }
 Post.get = async () =>{
-    let result = await $.ajax('http://localhost:'+port+'/posts',{
+    let result = await $.ajax('http://localhost:3001/posts',{
         type: "GET",
         dataType: "json"
     })
@@ -108,7 +107,7 @@ Post.send = async (id, m, u)=>{
             message: m,
             sanad: [u]
         })
-        await $.ajax("http://localhost:"+port+"/posts",
+        await $.ajax("http://localhost:3001/posts",
         {
             type: "POST",
             dataType: "json",
@@ -120,7 +119,7 @@ Post.send = async (id, m, u)=>{
             message: m,
             sanad: u
         })
-        await $.ajax('http://localhost:'+port+'/posts',
+        await $.ajax("http://localhost:3001/posts",
         {
             type: "POST",
             dataType: "json",
@@ -133,7 +132,7 @@ Post.send = async (id, m, u)=>{
             message: m,
             user: u
         })
-        await $.ajax('http://localhost:'+port+'posts/'+id,
+        await $.ajax("http://localhost:3001/posts/"+id,
         {
             type: "PUT",
             dataType: "json",

@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Yazid45/COMP426FINAL/issues"
   },
-  "homepage": "https://github.com/Yazid45/COMP426FINAL#readme"
+  "homepage": "https://github.com/Yazid45/COMP426FINAL#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
 }
