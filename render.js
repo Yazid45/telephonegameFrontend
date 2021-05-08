@@ -7,7 +7,7 @@ export async function topWindow(){
 
     let header = document.createElement('div')
     header.className = 'header'
-    header.append('The next person')
+    header.append('The most telphoned saying')
     window.append(header)
 
     let post = await Post.getBig()
